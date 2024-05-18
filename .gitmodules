@@ -1,0 +1,3 @@
+[submodule "PyNAU7802"]
+	path = PyNAU7802
+	url = https://github.com/BrunoB81HK/PyNAU7802.git
