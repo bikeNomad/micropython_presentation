@@ -1,3 +1,21 @@
 [submodule "PyNAU7802"]
 	path = catbox_monitor/modules/PyNAU7802
 	url = https://github.com/bikeNomad/PyNAU7802.git
+[submodule "catbox_monitor/modules/microdot"]
+	path = catbox_monitor/modules/microdot
+	url = https://github.com/miguelgrinberg/microdot
+[submodule "catbox_monitor/modules/plotly"]
+	path = catbox_monitor/modules/plotly
+	url = https://github.com/plotly/plotly.py.git
+[submodule "catbox_monitor/modules/tinypico-micropython"]
+	path = catbox_monitor/modules/tinypico-micropython
+	url = https://github.com/tinypico/tinypico-micropython.git
+[submodule "catbox_monitor/modules/utemplate"]
+	path = catbox_monitor/modules/utemplate
+	url = https://github.com/pfalcon/utemplate.git
+[submodule "catbox_monitor/modules/micropython"]
+	path = catbox_monitor/modules/micropython
+	url = https://github.com/micropython/micropython.git
+[submodule "catbox_monitor/modules/micropython-example-boards"]
+	path = catbox_monitor/modules/micropython-example-boards
+	url = https://github.com/micropython/micropython-example-boards.git
