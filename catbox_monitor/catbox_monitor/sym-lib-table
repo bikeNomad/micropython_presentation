@@ -1,0 +1,5 @@
+(sym_lib_table
+  (version 7)
+  (lib (name "catbox")(type "KiCad")(uri "${KIPRJMOD}")(options "")(descr ""))
+  (lib (name "catbox_monitor")(type "KiCad")(uri "${KIPRJMOD}/catbox_monitor.kicad_sym")(options "")(descr ""))
+)
