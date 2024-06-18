@@ -53,6 +53,14 @@ def store_cal_factors(offset, scale):
         print(f"SCALE=float({scale})", file=f)
 
 
+def clear_cal_factors():
+    import os
+    try:
+        os.unlink("/cal_factors.py")
+    except OSError:
+        pass
+
+
 def initialize_loadcell():
     """
     Initialize the load cell.
@@ -76,4 +84,4 @@ def initialize_loadcell():
 
 
 def read_weight():
-    return loadcell.getWeight(True, 8)
+    return loadcell.get_weight(True, 8)
