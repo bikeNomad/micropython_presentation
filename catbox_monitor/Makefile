@@ -52,8 +52,8 @@ ifdef BOARD_DIR
 # the path as the board name.
 BOARD = $(notdir $(BOARD_DIR:/=))
 else
-# If not given on the command line, then default to GENERIC.
-BOARD ?= GENERIC
+# If not given on the command line, then default to UM_TINYPICO.
+BOARD ?= UM_TINYPICO
 BOARD_DIR ?= $(PORT_DIR)/boards/$(BOARD)
 endif
 
