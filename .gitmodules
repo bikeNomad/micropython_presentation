@@ -13,3 +13,6 @@
 [submodule "catbox_monitor/modules/esp-idf"]
 	path = catbox_monitor/modules/esp-idf
 	url = https://github.com/espressif/esp-idf.git
+[submodule "catbox_monitor/modules/micropython-mqtt"]
+	path = catbox_monitor/modules/micropython-mqtt
+	url = https://github.com/peterhinch/micropython-mqtt.git
