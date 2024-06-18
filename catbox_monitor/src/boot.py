@@ -23,6 +23,3 @@ print(f".frozen/boot: sys.path={sys.path}")
 
 if 'boot.py' in root_files:
     import boot
-
-if 'main.py' in root_files:
-    import main
