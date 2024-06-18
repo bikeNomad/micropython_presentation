@@ -5,6 +5,10 @@ from dotstar import DotStar
 from mqtt_as import config
 
 config['server'] = '192.168.1.12'  # eclipse mosquitto on Synology DS412
+config['user'] = 'mpy1'
+config['password'] = 'mpy1_passwd'
+config['queue_len'] = 10
+
 config['ssid'] = 'Metamagix'
 config['wifi_pw'] = 'Holy Hand Grenade of Antioch'
 
