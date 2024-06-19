@@ -1,6 +1,8 @@
 import asyncio
 import aiorepl
 import json
+import webrepl
+import network
 from time import sleep
 from loadcell import initialize_loadcell, read_weight, clear_cal_factors
 from nh3_sensor import read_nh3, initialize_nh3
@@ -49,6 +51,9 @@ try:
     sleep(5)
 except KeyboardInterrupt:
     clear_cal_factors()
+
+webrepl.start(password='1234')
+network.hostname(TOPIC.replace('/', '_'))
 
 # Set up client
 MQTTClient.DEBUG = False
