@@ -12,5 +12,5 @@ def initialize_nh3():
 
     
 def read_nh3():
-    """Return a relative value for the ammonia concentration in uV."""
-    return adc.read_uv()
+    """Return a relative value for the ammonia concentration in mV."""
+    return adc.read_uv() / 1000.0

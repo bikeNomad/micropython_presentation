@@ -3,14 +3,12 @@ from machine import SoftSPI, Pin
 import tinypico as TinyPICO
 from dotstar import DotStar
 from mqtt_as import config
+import wifi_credentials  # sets config['ssid'] and config['wifi_pw']
 
 config['server'] = '192.168.1.12'  # eclipse mosquitto on Synology DS412
 config['user'] = 'mpy1'
 config['password'] = 'mpy1_passwd'
 config['queue_len'] = 10
-
-config['ssid'] = 'Metamagix'
-config['wifi_pw'] = 'Holy Hand Grenade of Antioch'
 
 # Configure SPI for controlling the DotStar
 # Internally we are using software SPI for this as the pins being used are not hardware SPI pins
@@ -41,5 +39,5 @@ def ledfunc(ix, init):
     return func
 
 
-wifi_led = ledfunc(1, 1)    # Green LED
+wifi_led = ledfunc(0, 0)    # Red LED
 blue_led = ledfunc(2, 0)    # Blue LED

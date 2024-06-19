@@ -1,3 +1,4 @@
 
 /catbox_monitor/catbox_monitor/catbox_monitor-backups
 src/mqtt_local.py
+src/wifi_credentials.py

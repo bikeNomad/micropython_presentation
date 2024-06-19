@@ -22,5 +22,4 @@ module("mqtt_as.py", base_path="modules/micropython-mqtt/mqtt_as")
 module("main.py", base_path="src")
 module("boot.py", base_path="src")
 
-package("app", files=["config.py", "loadcell.py",
-        "nh3_sensor.py", "dump_lc.py", "mqtt_local.py"], base_path="src")
+package("app", base_path="src")
